@@ -1,6 +1,7 @@
 import 'whatwg-fetch';
 
 import calculate from './calculate';
+import average from './average';
 
 // This is browser code to hook up our calculator to the DOM
 const operation = document.querySelector('[name=c-operation]');
@@ -30,7 +31,7 @@ avgAdd.addEventListener('click', () => {
 
 avgSubmit.addEventListener('click', () => {
   const inputs = avgList.querySelectorAll('.average-item__input');
-  const values = inputs.map(i => i.value);
+  const values = Array.from(inputs).map(i => parseFloat(i.value));
 
   const result = average(values);
 
