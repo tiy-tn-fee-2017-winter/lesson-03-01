@@ -7,5 +7,17 @@
  * @return {number} result of calculation
  */
 export default function (operation, value1, value2) {
+  if (operation === 'add') {
+    return value1 + value2;
+  }
 
+  if (operation === 'subtract') {
+    return value1 - value2;
+  }
+
+  if (operation === 'divide') {
+    return value1 / value2;
+  }
+
+  return value1 * value2;
 }

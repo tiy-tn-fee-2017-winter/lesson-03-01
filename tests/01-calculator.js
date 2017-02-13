@@ -12,6 +12,9 @@
 import calculate from '../app/calculate';
 
 module('Calculate', () => {
+  test('it fails to run', (assert) => {
+    assert.ok(true);
+  });
   test('it can add numbers', (assert) => {
     assert.strictEqual(calculate('add', 1, 1), 2, 'It should be able to add 1 and 1');
     assert.strictEqual(calculate('add', 1, 5), 6, 'It should be able to add 1 and 5');

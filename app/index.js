@@ -10,7 +10,7 @@ const calculationSubmit = document.querySelector('.calculator__submit');
 const calculationResult = document.querySelector('.calculator__result');
 
 calculationSubmit.addEventListener('click', () => {
-  const result = calculate(operation.value, value1.value1, value2.value);
+  const result = calculate(operation.value, parseFloat(value1.value), parseFloat(value2.value));
 
   calculationResult.innerText = result || 'NaN';
 });
