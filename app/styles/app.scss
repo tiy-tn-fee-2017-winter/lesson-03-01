@@ -103,4 +103,8 @@ ul {
 
   font-family: inherit;
   font-size: inherit;
+
+  & + & {
+    margin-left: 0.4rem;
+  }
 }
