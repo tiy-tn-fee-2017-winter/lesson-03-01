@@ -6,6 +6,56 @@
   <link rel="stylesheet" href="/app.css">
 </head>
 <body>
+  <div class="section section--calc">
+    <div class="container">
+      <div class="calculator">
+        <h1>Calculator</h1>
+        <p class="calculator__row calculator__row--math">
+          calculate(
+          <select class="calculator__select" name="c-operation">
+            <option>add</option>
+            <option>subtract</option>
+            <option>multiply</option>
+            <option>divide</option>
+          </select>
+          ,
+          <input type="text" placeholder="value1" class="calculator__input" name="c-value1">
+          ,
+          <input type="text" placeholder="value2" class="calculator__input" name="c-value2">
+          ) => <span class="calculator__result">0</span>
+        </p>
+
+        <p class="calculator__row">
+          <button class="calculator__submit btn">Calculate</button>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section section--average">
+    <div class="container">
+      <div class="average">
+        <h1>Average</h1>
+        <div class="average__row average__row--math">
+          average(
+          <ul class="average__list">
+            <li class="average-item">
+              <input type="text" class="average-item__input">
+            </li>
+          </ul>
+          ) =>
+
+          <span class="average__result">0</span>
+        </div>
+
+        <p class="average__row">
+          <button class="btn average__add">Add Another Item</button>
+          <button class="btn average__submit">Calculate</button>
+        </p>
+      </div>
+    </div>
+  </div>
+
   <script src="/app.js" charset="utf-8"></script>
 </body>
 </html>

@@ -4,3 +4,103 @@
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
 @import 'box-sizing';
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.section {
+  padding: 1rem;
+}
+
+.calculator {
+  &__row {
+    display: flex;
+    align-items: center;
+
+    > * + * {
+      margin-left: 0.1rem;
+    }
+
+    &--math {
+      font-family: monospace;
+    }
+  }
+
+  &__result {
+    display: block;
+    padding: 0.1rem 0.2rem;
+    background: #ccc;
+    border: 0.1rem solid #aaa;
+
+    font-weight: bold;
+    color: hsl(12,74%,45%);
+  }
+}
+
+.average {
+  &__row {
+    display: flex;
+    align-items: center;
+
+    > * + * {
+      margin-left: 0.1rem;
+    }
+
+    &--math {
+      font-family: monospace;
+    }
+  }
+
+  &__result {
+    display: block;
+    padding: 0.1rem 0.2rem;
+    background: #ccc;
+    border: 0.1rem solid #aaa;
+
+    font-weight: bold;
+    color: hsl(12,74%,45%);
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+
+    > * + * {
+      margin-left: 0.1rem;
+    }
+    &::before {
+      content: "[";
+    }
+    &::after {
+      content: "]";
+    }
+  }
+}
+
+.average-item {
+  & + & {
+    &::before {
+      content: ',';
+    }
+  }
+}
+
+
+.btn {
+  background: #118e86;
+  color: #fefefe;
+  font-weight: 200;
+  border: 0;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.4rem;
+
+  font-family: inherit;
+  font-size: inherit;
+}
