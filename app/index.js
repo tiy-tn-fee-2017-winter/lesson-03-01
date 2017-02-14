@@ -1,5 +1,7 @@
 import 'whatwg-fetch';
 
+import './planet-express';
+
 import calculate from './calculate';
 import average from './average';
 
