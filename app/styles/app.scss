@@ -4,6 +4,7 @@
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
 @import 'box-sizing';
+@import 'nasa-pod';
 
 body {
   margin: 0;
@@ -17,6 +18,11 @@ ul {
 
 .section {
   padding: 1rem;
+}
+
+.container {
+  max-width: 65rem;
+  margin: auto;
 }
 
 .calculator {
