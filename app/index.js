@@ -1,5 +1,6 @@
 import 'whatwg-fetch';
 
+import './nasa';
 import './planet-express';
 
 import calculate from './calculate';
